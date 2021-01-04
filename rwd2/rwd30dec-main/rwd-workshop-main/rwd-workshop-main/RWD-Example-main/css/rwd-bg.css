@@ -1,0 +1,18 @@
+
+
+
+.banner {
+    background: url(https://cdn.wccftech.com/wp-content/uploads/2017/10/ryzen-galaxy-s7-edge-rom.jpg ) no-repeat scroll 50% #642DD2;
+    width: 960px;
+    height: 400px;
+    margin: 0 auto;
+    color: #EAEB2B;
+    font-size: larger;
+}
+
+@media all and (max-width: 800px) {
+    .banner {
+        width: 100%;
+        background-size: contain;
+    }
+}

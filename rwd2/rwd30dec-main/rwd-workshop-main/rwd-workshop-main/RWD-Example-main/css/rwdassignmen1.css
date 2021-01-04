@@ -1,0 +1,157 @@
+section, header, footer, nav, main, aside{ 
+    outline: 2px solid rgb(163, 158, 158);
+    outline-offset: -1px;
+  }
+
+header{
+grid-area: header;
+}
+
+nav{
+
+    grid-area: nav;
+}
+
+aside{
+
+
+    grid-area: aside;
+}
+
+section{            
+
+    column-count: 3;
+    column-width: 100px;
+    grid-area: section;
+
+}
+
+
+
+
+footer{
+
+    grid-area:footer;
+
+}
+
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(233, 232, 232);
+  }
+  
+ nav li {
+    float: right;
+  }
+  
+ nav  li a {
+    display: block;
+    color: rgb(73, 64, 158);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  nav li a:hover:not(.active) {
+    background-color: rgb(73, 70, 70);
+  }
+  
+
+
+
+
+img  {
+   
+
+   
+    height: 50px;
+    width: 80px;
+
+
+    float: left;
+
+     background: #555;
+    padding: 1  px;
+    
+}
+
+
+
+main{
+
+display:grid;
+  
+grid-template-rows: 100px 70px 200px 120px 70px;
+grid-template-columns: 400px ;
+grid-template-areas:
+
+"header header header header"
+"nav nav nav nav"   
+ 
+ 
+"aside section section section "   
+"aside section section section"
+ 
+"footer footer footer footer";
+
+grid-gap:5px ;
+background-color: rgb(114, 80, 122);
+padding: 10px;
+
+
+ 
+}
+
+
+
+
+@media all and (max-width:600px){
+
+
+    main
+    {
+
+        display:grid;
+          
+        grid-template-rows: 100px 70px 200px 120px 70px;
+        grid-template-columns: 400px ;
+        grid-template-areas:
+        
+        "header header header header"
+        "nav nav nav nav"   
+         
+         
+        "section section section section "   
+        
+        "footer footer footer footer";
+        
+        grid-gap:5px ;
+        background-color: rgb(114, 80, 122);
+        padding: 10px;
+        
+        
+         
+        }
+        
+        section{            
+
+            column-count: 1;
+            column-width: 480px;
+            grid-area: section;
+        
+            overflow: hidden;
+        }
+        
+
+        
+        
+
+
+
+
+}

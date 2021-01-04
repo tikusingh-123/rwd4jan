@@ -1,0 +1,52 @@
+body {
+    background-color: blanchedalmond;
+}
+
+.wrapper {
+    background-color: chocolate;
+    margin: 0px auto;
+    padding: 5px auto;
+    width: 700px;
+    
+}
+
+/*Red*/
+@media screen and (min-width: 767px) {
+    .wrapper {
+        background-color: crimson;
+        width: 90%;
+    }
+}
+
+/*Green*/
+@media screen and (max-width: 1900px) and (min-width: 1000px) {
+    .wrapper {
+        background-color:greenyellow;
+        width: 80%;
+    }
+}
+
+/*Blue*/
+@media screen and (max-width: 768px) {
+
+    .wrapper {
+        background-color: blueviolet;
+        width: 60%;
+    }
+}
+
+@media all and (orientation:potrait) {
+    .wrapper {
+        background-color: chocolate;
+        width: 80%;
+    }
+}
+
+@media all and (orientation:landscape) {
+    .wrapper {
+        background-color: cyan;
+        width: 60%;
+    }
+}
+
+/*(max-width: 960px) and */

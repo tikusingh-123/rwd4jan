@@ -1,0 +1,49 @@
+body {
+    background-color: blanchedalmond;
+    color: thistle;
+}
+
+
+
+img {
+    width: 300px;
+    height: 300px;
+}
+
+img[alt="Arch"] {
+    width: auto;
+    height: auto;
+}
+
+/* smallest device */
+@media screen and (max-width: 800px) {
+    img {
+        max-width: 100%;
+    }
+
+    .wrapper {
+        background-color: purple;
+    }
+}
+
+/* Medium device */
+@media all and (min-width: 480px) and (max-width: 790px) {
+    img {
+        max-width: 60%;
+    }
+    .wrapper {
+        background-color: orange;
+    }
+}
+
+/* Large devices */
+@media all and (min-width: 400px) {
+    img {
+        max-width: 40%;
+        display: block;
+        margin: auto;
+    }
+    .wrapper {
+        background-color: green;
+    }
+}

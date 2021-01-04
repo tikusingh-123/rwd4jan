@@ -1,0 +1,223 @@
+
+.section {
+
+   
+    background: url(https://cdn.wccftech.com/wp-content/uploads/2017/10/ryzen-galaxy-s7-edge-rom.jpg ) no-repeat scroll 50% #bb3703;
+   
+    margin: 2 auto;
+    color: #e6e6e4;
+    font-size: larger;
+}
+
+
+
+
+.header img {
+    float: left;
+    width: 200px;
+    height: 100px;
+    background: #555;
+    padding: 5px;
+  } 
+  
+  .header h1 {
+    position: relative;
+    top: 18px;
+    left: 10px;
+    margin: auto;
+    color: red;
+    text-align: center;
+    font-size: 4vw  ;
+
+
+  }
+
+ul {
+    list-style-type: none;
+    margin: 5px;
+    padding: 5px;
+    overflow: hidden;
+    background-color: rgb(7, 7, 7);
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    
+  }
+  
+  li a:hover {
+    background-color: rgb(95, 29, 29);
+  }
+
+
+
+
+.header{
+    grid-area:header;
+
+}
+
+
+.nav{
+
+grid-area:nav;
+
+}
+
+
+.section
+{
+grid-area:section;
+
+}
+
+
+.aside{
+    grid-area:aside;
+
+}
+
+.footer{
+
+
+    grid-area:footer;
+}
+
+
+.container{
+
+        display:grid;
+    /* grid-template-columns: 50px 50px 50px 50px;
+        grid-template-rows: auto;
+        */
+        grid-template-rows: 100px 100px 200px 100px;
+        grid-template-columns: 500px 100px 100px;
+        grid-template-areas:
+
+        "header header header header"
+        "nav nav nav nav"
+        "section section aside aside"
+        "footer footer footer footer";
+
+        grid-gap:10px ;
+        background-color: rgb(108, 116, 116);
+        padding: 10px;
+    
+        
+    }
+
+
+    .container >div{
+
+        background-color: rgb(49, 34, 34);
+        text-align: center;
+        
+    
+    }
+
+
+
+
+    .nav > select{
+
+        display: none;
+    }
+
+@media all and (max-width: 600px) {
+
+
+    
+
+    .container{
+
+        display:grid;
+  
+        grid-template-rows: 100px 100px 200px 100px;
+        grid-template-columns: 400px ;
+        grid-template-areas:
+
+        "header header header header"
+        "nav nav nav nav"   
+        "section section section section"
+        "aside aside aside aside" 
+        "footer footer footer footer";
+
+        grid-gap:5px ;
+        background-color: rgb(114, 80, 122);
+        padding: 10px;
+    
+        
+    }
+
+
+    .container >div{
+
+        background-color: rgb(20, 19, 19);
+        text-align: center;
+        
+    
+    }
+
+    .section {
+
+   
+        background: url(https://cdn.wccftech.com/wp-content/uploads/2017/10/ryzen-galaxy-s7-edge-rom.jpg ) no-repeat scroll 50% #bb3703;
+       
+        margin: 2 auto;
+        color: #e6e6e4;
+        font-size: larger;
+    }
+
+    .header h1 {
+        position: relative;
+        top: 18px;
+        left: 10px;
+        margin: auto;
+        color: rgb(238, 236, 236);
+        text-align: center;
+        font-size: 5 vw  ;
+    
+    
+      }
+
+
+
+    ul {
+        list-style-type: none;
+        margin: 5px;
+        padding: 5px;
+        overflow: hidden;
+        background-color: rgb(49, 18, 18);
+      }
+
+
+      .nav > ul{
+
+        display: none;
+    }
+
+
+    .nav > select{
+
+        display: inline-block;
+
+
+   
+    margin: 5px;
+    padding: 10px;
+    overflow: hidden;
+    background-color: rgb(7, 7, 7);
+    width: 100%;
+    color: #e6e6e4;
+    font-size: 4vw;
+    }
+
+}
+
